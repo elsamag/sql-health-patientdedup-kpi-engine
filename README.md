@@ -12,9 +12,10 @@
 
 CarePoint Health Systems experienced critical inaccuracies in daily clinical reporting. The raw `patient_admissions` database logged every departmental check-in independently. Because patients frequently visited triage, radiology, lab work, and specialized care during a single hospital visit, raw row aggregation resulted in severe patient overcounting. This directly miscalculated staffing ratios and inflated nurse-to-patient allocation budgets.
 
-```
+
 ### The Client Problem & Workflow Comparison
 
+```
 | Operational Metric | Legacy Unoptimized Process | Modern Elsamag Automated Engine |
 | :--- | :--- | :--- |
 | **Data Extraction Logic** | Raw `COUNT(*)` on raw log entries | Engine-level `SELECT DISTINCT` filtering |
