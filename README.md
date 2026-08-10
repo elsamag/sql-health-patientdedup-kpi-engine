@@ -52,6 +52,7 @@ SELECT DISTINCT
     patient_id
 FROM
     patient_admissions;
+```
 ___
 
 ## Empirical Performance Metrics & Live Terminal Preview
