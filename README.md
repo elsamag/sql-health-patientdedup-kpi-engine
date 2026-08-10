@@ -15,7 +15,7 @@ CarePoint Health Systems experienced critical inaccuracies in daily clinical rep
 
 ### The Client Problem & Workflow Comparison
 
-```
+
 | Operational Metric | Legacy Unoptimized Process | Modern Elsamag Automated Engine |
 | :--- | :--- | :--- |
 | **Data Extraction Logic** | Raw `COUNT(*)` on raw log entries | Engine-level `SELECT DISTINCT` filtering |
