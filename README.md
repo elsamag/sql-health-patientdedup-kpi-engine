@@ -101,17 +101,17 @@ sql-health-patientdedup-kpi-engine/
 ##  Step-by-Step Deployment Guide
 
 
-### Clone repository
+### Step 1:Clone repository
 
 ```bash
 git clone https://github.com/Elsamag/sql-health-patientdedup-kpi-engine.git
 ```
-### Navigate to project
+### Step 2:Navigate to project
 
 ```bash
 cd sql-health-patientdedup-kpi-engine
 ```
-### Execute production query
+### Step 3:Execute production query
 
 ```bash
 psql -d carepoint_db -f src/query.sql
