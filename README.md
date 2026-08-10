@@ -21,15 +21,15 @@ CarePoint Health Systems experienced critical inaccuracies in daily clinical rep
 | **Reported Daily Count** | 50,000 logs (Inflated patient load) | 12,450 Verified Unique Patients |
 | **Resource Allocation** | Over-allocated nursing staff (+300%) | Precise, clinical load-matched staffing |
 | **Execution Latency** | Manual spreadsheet deduplication (3+ hrs) | Instant database query execution (14ms) |
-```
+
 
 ##  Technical Solution Architecture & Core Logic Blueprint
 
 The **Elsamag IT Solutions** engineering team deployed an optimized SQL extraction pipeline utilizing `SELECT DISTINCT` at the query execution tier. Rather than transporting raw duplicate rows across the network for memory-heavy application-tier processing, the database engine filters repeating `patient_id` hashes directly in RAM buffers prior to result streaming.
-___
+
 ##  Production Implementation Snippet
 
-```sql
+```
 -- =================================================================
 -- Enterprise Practice: Elsamag IT Solutions
 -- Author & Lead Consultant: Samuel Chinwendu Agu
@@ -44,7 +44,7 @@ FROM
     patient_admissions;
 
 
-___
+
 ##  Empirical Performance Metrics & Live Terminal Preview
 
 ```
@@ -60,7 +60,7 @@ $ psql -d carepoint_db -f src/query.sql
 [MEMORY] Peak execution RAM usage: 2.1 MB.
 [STATUS] Zero syntax errors, zero duplicate keys returned.
 
-___
+
 
 ##  Repository Structure & Directory Layout
 
