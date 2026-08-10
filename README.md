@@ -5,9 +5,9 @@
 ![Domain](https://img.shields.io/badge/Domain-Healthcare%20Analytics-334155)
 ![Enterprise](https://img.shields.io/badge/Enterprise-Elsamag%20IT%20Solutions-0f172a)
 
-```
-##  Executive Summary & Client Problem Narrative
 
+##  Executive Summary & Client Problem Narrative
+```
 **Client**: CarePoint Health Systems (Clinical Operations)  
 **Lead Consultant**: Samuel Chinwendu Agu (**Elsamag IT Solutions**)
 
