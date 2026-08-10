@@ -7,7 +7,6 @@
 
 
 ##  Executive Summary & Client Problem Narrative
-```
 **Client**: CarePoint Health Systems (Clinical Operations)  
 **Lead Consultant**: Samuel Chinwendu Agu (**Elsamag IT Solutions**)
 
