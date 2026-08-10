@@ -76,7 +76,7 @@ sql-health-patientdedup-kpi-engine/
 └── data/
     └── sample_admissions.csv
 
-___
+```
 
 ##  Step-by-Step Deployment Guide
 
