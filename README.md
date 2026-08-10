@@ -54,19 +54,28 @@ FROM
     patient_admissions;
 
 
-___
-##  Empirical Performance Metrics & Live Terminal Preview
+## Empirical Performance Metrics & Live Terminal Preview
 
-```
 * **Raw Log Volume Evaluated**: 50,000 Rows
 * **Verified Unique Records**: 12,450 Rows
 * **Execution Speed**: 14 ms
 * **Syntax Error Rate**: 0.00%
 
 ```text
-$ psql -d carepoint_db -f src/query.sql
-[INFO] Executing SELECT DISTINCT patient_id FROM patient_admissions...
-[SUCCESS] Query returned 12,450 rows in 0.014 seconds.
+$ psql -d carepoint_db \
+       -f src/query.sql
+
+[INFO] Executing query:
+SELECT DISTINCT patient_id...
+
+[SUCCESS] Returned 12,450 rows
+in 0.014 seconds.
+
+[MEMORY] Peak RAM: 2.1 MB.
+
+[STATUS] 0 syntax errors,
+0 duplicate keys returned.
+ 12,450 rows in 0.014 seconds.
 [MEMORY] Peak execution RAM usage: 2.1 MB.
 [STATUS] Zero syntax errors, zero duplicate keys returned.
 
