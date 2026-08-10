@@ -45,6 +45,7 @@ FROM
 
 ___
 ##  Empirical Performance Metrics & Live Terminal Preview
+
 ```
 * **Raw Log Volume Evaluated**: 50,000 Rows
 * **Verified Unique Records**: 12,450 Rows
@@ -59,6 +60,7 @@ $ psql -d carepoint_db -f src/query.sql
 [STATUS] Zero syntax errors, zero duplicate keys returned.
 
 ___
+
 ##  Repository Structure & Directory Layout
 
 ```text
@@ -75,18 +77,22 @@ sql-health-patientdedup-kpi-engine/
     └── sample_admissions.csv
 
 ___
+
 ##  Step-by-Step Deployment Guide
 
 
 # Clone repository
+
 ```bash
 git clone https://github.com/Elsamag/sql-health-patientdedup-kpi-engine.git
-
+```
 # Navigate to project
+
 ```bash
 cd sql-health-patientdedup-kpi-engine
 ```
 # Execute production query
+
 ```bash
 psql -d carepoint_db -f src/query.sql
 ```
