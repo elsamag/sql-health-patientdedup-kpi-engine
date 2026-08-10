@@ -62,7 +62,7 @@ ___
 * **Execution Speed**: 14 ms
 * **Syntax Error Rate**: 0.00%
 
-```text
+
 $ psql -d carepoint_db \
        -f src/query.sql
 
@@ -79,7 +79,6 @@ in 0.014 seconds.
  12,450 rows in 0.014 seconds.
 [MEMORY] Peak execution RAM usage: 2.1 MB.
 [STATUS] Zero syntax errors, zero duplicate keys returned.
-```
 
 
 ##  Repository Structure & Directory Layout
