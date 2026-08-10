@@ -13,8 +13,7 @@
 CarePoint Health Systems experienced critical inaccuracies in daily clinical reporting. The raw `patient_admissions` database logged every departmental check-in independently. Because patients frequently visited triage, radiology, lab work, and specialized care during a single hospital visit, raw row aggregation resulted in severe patient overcounting. This directly miscalculated staffing ratios and inflated nurse-to-patient allocation budgets.
 
 
-### The Client Problem & Workflow Comparison
-
+The Client Problem & Workflow Comparison
 
 | Operational Metric | Legacy Unoptimized Process | Modern Elsamag Automated Engine |
 | :--- | :--- | :--- |
@@ -23,21 +22,31 @@ CarePoint Health Systems experienced critical inaccuracies in daily clinical rep
 | **Resource Allocation** | Over-allocated nursing staff (+300%) | Precise, clinical load-matched staffing |
 | **Execution Latency** | Manual spreadsheet deduplication (3+ hrs) | Instant database query execution (14ms) |
 
+---
 
-##  Technical Solution Architecture & Core Logic Blueprint
+## 2. Technical Solution Architecture & Core Logic Blueprint
 
 The **Elsamag IT Solutions** engineering team deployed an optimized SQL extraction pipeline utilizing `SELECT DISTINCT` at the query execution tier. Rather than transporting raw duplicate rows across the network for memory-heavy application-tier processing, the database engine filters repeating `patient_id` hashes directly in RAM buffers prior to result streaming.
 
-##  Production Implementation Snippet
+---
 
-```
--- =================================================================
--- Enterprise Practice: Elsamag IT Solutions
--- Author & Lead Consultant: Samuel Chinwendu Agu
--- Project: Healthcare Patient ID Deduplication Engine
+## 3. Production Implementation Snippet
+
+```sql
+-- ====================================
+-- Enterprise Practice:
+-- Elsamag IT Solutions
+--
+-- Author & Lead Consultant:
+-- Samuel Chinwendu Agu
+--
+-- Project: Healthcare Patient ID
+-- Deduplication Engine
+--
 -- File: query.sql
--- Objective: Extract unique patient IDs to optimize nursing allocation
--- =================================================================
+-- Objective: Extract unique patient IDs
+-- to optimize nursing allocation
+-- ====================================
 
 SELECT DISTINCT
     patient_id
