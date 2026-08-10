@@ -1,0 +1,6 @@
+admission_id,patient_id,department,checkin_time
+ADM-1001,PAT-8841,Triage,2026-08-10 08:15:00
+ADM-1002,PAT-8841,Radiology,2026-08-10 08:45:00
+ADM-1003,PAT-9120,Urgent Care,2026-08-10 09:10:00
+ADM-1004,PAT-8841,Lab Services,2026-08-10 10:00:00
+ADM-1005,PAT-9120,Pharmacy,2026-08-10 10:30:00
